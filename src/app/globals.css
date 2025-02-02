@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -14,9 +16,9 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +26,50 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+.excalidraw-wrapper .excalidraw {
+  --editor-container-padding: 0;
+  /* background-color: green; */
+  border: solid 1px #DFE4EC;
+  border-radius: 6px;
+  /* --ui-font: "Inter" */
 }
+
+/* .excalidraw-wrapper .excalidraw .FixedSideContainer {
+  padding-left: 0px!important; 
+  padding-right: 0px!important; 
+  background-color: orange;
+}
+
+.excalidraw-wrapper .excalidraw .FixedSideContainer_side_top {
+  background-color: purple;
+  padding-left: 0px!important;
+  padding-right: 0px!important;
+}  */
+
+.excalidraw-wrapper .excalidraw .App-menu_top {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content:space-between;
+  /* border-bottom: solid 5px #DFE4EC; */
+  padding: 14px 14px 14px 14px;
+  /* margin-top: 35rem; */
+  /* background-color: purple; */
+}
+
+.excalidraw-wrapper .excalidraw .App-menu_top__left {
+  gap:0rem;
+  /* visibility: hidden; */
+  /* display: none; */
+}
+
+.excalidraw-wrapper .excalidraw .App-menu__left {
+  top: 100px;
+}
+
+/* .excalidraw-wrapper .excalidraw .dropdown-menu-button::after {
+  content: "whiteboard";
+  font-weight: bold;
+} */
