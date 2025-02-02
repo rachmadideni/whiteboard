@@ -8,13 +8,13 @@ export const appSlice = createSlice({
     reducers:{
 
     },
-    extraReducers: {
-        [HYDRATE]: (state: any, action: { payload: { subject: any; }; }) => {
-          console.log('HYDRATE', state, action.payload);
-          return {
-            ...state,
-            ...action.payload.subject,
-          };
-        },
-      },
+    // extraReducers: {
+    //     [HYDRATE]: (state: any, action: { payload: { subject: any; }; }) => {
+    //       console.log('HYDRATE', state, action.payload);
+    //       return {
+    //         ...state,
+    //         ...action.payload.subject,
+    //       };
+    //     },
+    //   },
 })
